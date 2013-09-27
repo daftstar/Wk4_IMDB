@@ -3,7 +3,7 @@
 
 <ul>
 	<% @movies_all.each do |movie| %>
-	<li>username:		<%= link_to movie.title, movie_url(movie.id) %></li>
+	<li>movie name:	 <%= link_to movie.title, movie_url(movie.id) %></li>
 	<li>description: <%= movie.snippet %></li>
 	<hr>
 	<% end %>
