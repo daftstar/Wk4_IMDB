@@ -1,17 +1,10 @@
 # This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+
 # First generate a new database 
 #
 # rails generate model DBName column_name:type column_name:type column_name:type
 
 # rails generate model Movie title:string youtube_trailer_id:string giphyID:string description:text
-
-
 
 
 puts "clearing data in the Movie table"
@@ -56,3 +49,4 @@ movies.each do |movie|
 end
 
 puts "added dummy data for Movie table"
+

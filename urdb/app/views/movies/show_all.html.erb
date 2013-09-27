@@ -1,0 +1,14 @@
+<h1> all the videos!!! </h1>
+
+
+<ul>
+	<% @movies_all.each do |movie| %>
+	<li>username:		<%= link_to movie.title, movie_url(movie.id) %></li>
+	<li>description: <%= movie.description %></li>
+	<hr>
+	<% end %>
+</ul>
+<br>
+
+<em><p><%= link_to 'first movie', movie_url(@movies_first) %></p></em>
+<p>		 <%= link_to 'last movie', 	movie_url(@movies_last) %></p><br>
