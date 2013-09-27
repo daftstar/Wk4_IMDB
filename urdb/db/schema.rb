@@ -11,15 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130927165336) do
+ActiveRecord::Schema.define(version: 20130927173325) do
 
   create_table "movies", force: true do |t|
     t.string   "title"
     t.string   "youtube_trailer_id"
-    t.string   "anim_gif_link"
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "giphyID"
   end
 
 end
