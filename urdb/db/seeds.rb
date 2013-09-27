@@ -9,7 +9,7 @@
 #
 # rails generate model DBName column_name:type column_name:type column_name:type
 
-# rails generate model Movie title:string youtube_trailer_id:string anim_gif_link:string description:text
+# rails generate model Movie title:string youtube_trailer_id:string giphyID:string description:text
 
 
 
@@ -24,25 +24,25 @@ movies = [
 	{
 		title: "Shaun of the Dead",
 		youtube_trailer_id: "z-lmF5DAssU",
-		anim_gif_link: "http://giphy.com/gifs/mAYym8ui14nuM",
+		giphyID: "mAYym8ui14nuM",
 		description: "A man decides to turn his moribund life around by winning back his ex-girlfriend, reconciling his relationship with his mother, and dealing with an entire community that has returned from the dead to eat the living."
 	},
 	{
 		title: "The Bourne Supremacy",
 		youtube_trailer_id: "R571pvOxNSY",
-		anim_gif_link: "http://giphy.com/gifs/q1L8lOI01EtrO/",
+		giphyID: "q1L8lOI01EtrO",
 		description: "When Jason Bourne is framed for a botched CIA operation he is forced to take up his former life as a trained assassin to survive."
 	},	
 	{
 		title: "In Bruges ",
 		youtube_trailer_id: "Ibwe9nmssCw",
-		anim_gif_link: "http://giphy.com/gifs/Z57CXxhePbTlS/",
+		giphyID: "Z57CXxhePbTlS",
 		description: "Guilt-stricken after a job gone wrong, hitman Ray and his partner await orders from their ruthless boss in Bruges, Belgium, the last place in the world Ray wants to be."
 	},
 	{
 		title: "The Dark Knight",
 		youtube_trailer_id: "g8evyE9TuYk",
-		anim_gif_link: "http://giphy.com/gifs/N9kZiAZw0odhK/",
+		giphyID: "N9kZiAZw0odhK",
 		description: "When Batman, Gordon and Harvey Dent launch an assault on the mob, they let the clown out of the box, the Joker, bent on turning Gotham on itself and bringing any heroes down to his level."
 	}	
 ]
@@ -51,7 +51,7 @@ movies.each do |movie|
 	Movie.create(
 		title: movie[:title], 
 		youtube_trailer_id: movie[:youtube_trailer_id],
-		anim_gif_link: movie[:anim_gif_link],
+		giphyID: movie[:giphyID],
 		description: movie[:description])
 end
 
